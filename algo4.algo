@@ -1,0 +1,25 @@
+ALGORITHM tri_insertion
+VAR
+i,j,k : INTEGER;
+ T : ARRAY_OF INTEGER [];
+BEGIN
+  T := { 12, 11, 13, 5, 6 };
+
+   FOR i FROM 1 TO T.length -1  DO
+       k=T[i];
+       j=i-1;
+   END_FOR
+WHILE (j>= 0 and T[i]>k) DO
+     T[j + 1] = T[j];
+    j = j - 1;
+END_WHILE
+arr[j + 1] = K;
+
+END
+
+
+
+
+
+
+
